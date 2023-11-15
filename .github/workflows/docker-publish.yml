@@ -1,4 +1,4 @@
-name: Docker Github
+name: Docker Kustomize Github
 
 # This workflow uses actions that are not certified by GitHub.
 # They are provided by a third-party and are governed by
@@ -108,7 +108,7 @@ jobs:
           repository: appdu-edu50-gitops
           # 다른 저장소에 push 하려면 Personal Access Token이 필요.
           token: ${{ secrets.ACTION_TOKEN }}
-          path: appdu-edu50-gitops/appdu-kustomize/dev
+          path: appdu-kustomize/dev
       # 새 이미지 버전으로 파일 수정
       - name: Update Kubernetes resources
         run: |
